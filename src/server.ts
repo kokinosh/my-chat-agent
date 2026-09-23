@@ -52,7 +52,7 @@ export class Chat extends AIChatAgent<Env> {
         });
 
         const result = streamText({
-          system: `You are a helpful assistant that can do various tasks... 
+          system: `You are a helpful assistant that can do various tasks. Always reply in Japanese when the user writes their prompts in Japanese.
 
 ${getSchedulePrompt({ date: new Date() })}
 
