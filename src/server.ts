@@ -19,7 +19,7 @@ import { tools, executions } from "./tools";
 import { env } from "cloudflare:workers";
 
 const workersai = createWorkersAI({ binding: env.AI });
-const model = workersai("@cf/meta/llama-3.3-70b-instruct-fp8-fast");
+const model = workersai("@cf/moonshotai/kimi-k2.7-code");
 
 /**
  * Chat Agent implementation that handles real-time AI chat interactions
